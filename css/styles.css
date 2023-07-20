@@ -61,9 +61,10 @@ input {
   width: 100%;
   max-width: 500px;
   margin: 10% auto;
-  background-color: #3a6fc9;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px 0px #7d96c0;
+  /* background-color: #3a6fc9; */
+  background-color: transparent;
+  /* border-radius: 10px; */
+  box-shadow: 2px 2px 4px 0px #bcbcbc;
   animation-name: fadeForm;
   animation-duration: 0.4s;
   animation-timing-function: ease-in-out;
@@ -83,32 +84,45 @@ input {
 }
 
 .form-registration-logo {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
   padding-left: 6%;
+  padding-right: 6%;
 }
-.form-registration-logo-1 {
-}
-.form-registration-logo-2 {
-  padding-top: 19px;
-  margin-left: -6px;
+.form-registration-logo-img {
+  width: 40%;
+  padding-top: 6%;
 }
 
 .form-registration-title {
-  margin-left: auto;
-  padding: 9% 6%;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  text-align: center;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  padding: 5% 0%;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  /* text-align: center; */
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 360px) {
+  .form-registration-title {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .form-registration-title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 460px) {
+  .form-registration-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 470px) {
+  .form-registration-title {
+    font-size: 21px;
+  }
 }
 .input-container {
   padding: 0 6% 9%;
@@ -116,15 +130,15 @@ input {
 .reg-input {
   font-family: 'Roboto';
   width: 100%;
-  padding: 3%;
+  padding: 1%;
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 700;
   border: 1px solid #dcdcdc;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 input:hover {
-  box-shadow: 2px 2px 4px 0px #7d96c0;
+  box-shadow: 2px 2px 4px 0px #888888;
   transition: box-shadow 0.1s ease-in-out;
 }
 input:focus::-webkit-input-placeholder {
@@ -157,14 +171,14 @@ input:focus::-ms-input-placeholder {
   font-weight: bold;
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding: 0% 7%;
-  background: #1a385e;
+  background: #37b6d5;
   border: none;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   float: right;
   cursor: pointer;
 }
