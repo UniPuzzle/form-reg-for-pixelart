@@ -88,7 +88,16 @@ input:hover {
   box-shadow: 2px 2px 4px 0px #7d96c0;
 }
 input:focus::-webkit-input-placeholder {
-  color: #a29f9f;
+  color: #888888;
+}
+input:focus:-moz-placeholder {
+  color: #888888;
+}
+input:focus::-moz-placeholder {
+  color: #888888;
+}
+input:focus::-ms-input-placeholder {
+  color: #888888;
 }
 
 ::-webkit-input-placeholder {
@@ -118,4 +127,12 @@ input:focus::-webkit-input-placeholder {
   border-radius: 25px;
   float: right;
   cursor: pointer;
+}
+
+.btn:focus {
+  -webkit-box-shadow: 2px 2px 4px 0px #7d96c0;
+
+  -moz-box-shadow: 2px 2px 4px 0px #7d96c0;
+
+  box-shadow: 2px 2px 4px 0px #7d96c0;
 }
