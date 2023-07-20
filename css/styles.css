@@ -1,22 +1,4 @@
-/* classes are written according to the BEM methodology */
-
 /* common styles */
-
-:root {
-  --main-text-color: #19385d;
-  --secondary-text-color: #ffffff;
-  --title-color: #0c3e96;
-
-  --bgc-header-menu: #3a6fc9;
-  --bcg-color: #ebf3ff;
-  --white-bgc: #ffffff;
-  --item-block-bgc: #648dd4;
-  --bgc-date: #dd2a1b;
-  --bgc-hero-card: #f53323;
-  --bcg-color-footer: #19385d;
-
-  --transition: 250ms;
-}
 
 html {
   box-sizing: border-box;
@@ -31,10 +13,6 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.12;
-  color: var(--main-text-color);
-  background-color: var(--white-color);
 }
 
 h1,
@@ -52,6 +30,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+input {
+  outline: 0 !important;
 }
 
 .link {
@@ -72,44 +53,69 @@ img {
   padding: 0;
 }
 
-.container {
-  width: 1440px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* ================================= */
 
-.title {
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 1.14;
-  color: var(--title-color);
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10% auto;
+  background-color: #3a6fc9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 0px #7d96c0;
+}
+.form-registration h1 {
+  margin-left: auto;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
   text-transform: uppercase;
 }
+.input-container {
+  padding: 0 20px 20px;
+}
+.reg-input {
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 25px;
+}
+input:hover {
+  box-shadow: 2px 2px 4px 0px #7d96c0;
+}
+input:focus::-webkit-input-placeholder {
+  color: #a29f9f;
+}
 
-.item-title {
-  display: flex;
-  font-weight: 400;
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-moz-placeholder {
+  color: #bfbfbf;
+}
+:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.btn {
+  font-weight: bold;
+  color: #fff;
   font-size: 14px;
-  line-height: 1.57;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: var(--secondary-text-color);
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  background: #1a385e;
+  border: none;
+  border-radius: 25px;
+  float: right;
+  cursor: pointer;
 }
-
-/* ===============Header============== */
-
-.header__logo {
-}
-
-/* ===============section============ */
-
-/* =============footer============= */
-
-.footer {
-}
-
-/* ================================ */
