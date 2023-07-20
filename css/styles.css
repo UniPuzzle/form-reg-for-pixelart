@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -58,34 +58,74 @@ input {
 .form-registration {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
   margin: 10% auto;
   background-color: #3a6fc9;
   border-radius: 10px;
   box-shadow: 2px 2px 4px 0px #7d96c0;
+  animation-name: fadeForm;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-.form-registration h1 {
-  margin-left: auto;
-  padding: 20px;
+
+@keyframes fadeForm {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.form-registration-logo {
+  display: flex;
+  align-items: center;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 6%;
+}
+.form-registration-logo-1 {
+}
+.form-registration-logo-2 {
+  padding-top: 19px;
+  margin-left: -6px;
+}
+
+.form-registration-title {
+  margin-left: auto;
+  padding: 9% 6%;
+  color: #fff;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
 .input-container {
-  padding: 0 20px 20px;
+  padding: 0 6% 9%;
 }
 .reg-input {
+  font-family: 'Roboto';
   width: 100%;
-  padding: 6px 12px;
+  padding: 3%;
   margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
   border: 1px solid #dcdcdc;
   border-radius: 25px;
 }
 input:hover {
   box-shadow: 2px 2px 4px 0px #7d96c0;
+  transition: box-shadow 0.1s ease-in-out;
 }
 input:focus::-webkit-input-placeholder {
   color: #888888;
@@ -116,12 +156,12 @@ input:focus::-ms-input-placeholder {
 .btn {
   font-weight: bold;
   color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
   text-align: center;
   text-transform: uppercase;
-  padding: 6px 20px;
+  padding: 0% 7%;
   background: #1a385e;
   border: none;
   border-radius: 25px;
