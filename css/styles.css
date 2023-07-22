@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #ededed;
 }
 
 h1,
@@ -70,8 +71,8 @@ input {
   width: 100%;
   max-width: 500px;
   margin: 10% auto;
-  background-color: transparent;
-  box-shadow: 2px 2px 4px 0px #ededed;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 0px #6a6a6a;
   animation-name: fadeForm;
   animation-duration: 0.4s;
   animation-timing-function: ease-in-out;
@@ -198,7 +199,7 @@ input:focus::-ms-input-placeholder {
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
-  padding: 0.6% 3% 0;
+  padding: 0.9% 3% 0.3%;
   background: #000066;
   color: #fff;
   /* border: 1px solid #000066; */
