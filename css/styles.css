@@ -70,9 +70,7 @@ input {
   width: 100%;
   max-width: 500px;
   margin: 10% auto;
-  /* background-color: #3a6fc9; */
   background-color: transparent;
-  /* border-radius: 10px; */
   box-shadow: 2px 2px 4px 0px #ededed;
   animation-name: fadeForm;
   animation-duration: 0.4s;
@@ -93,11 +91,10 @@ input {
 }
 
 .form-registration-logo {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
 }
 .form-registration-logo-img {
-  width: 40%;
+  width: 50%;
   padding-top: 6%;
 }
 
